@@ -1,0 +1,22 @@
+
+Algoritmo AprobacionAsignatura
+    Definir promedio Como Real
+
+    Escribir "Ingrese el promedio final (0 a 10):"
+    Leer promedio
+
+    Si promedio >= 7 Entonces
+        Escribir "APRUEBA"
+    Sino
+        Escribir "NO APRUEBA"
+    FinSi
+FinAlgoritmo
+
+
+
+promedio = float(input("Ingrese el promedio final (0 a 10): "))
+
+if promedio >= 7:
+    print("APRUEBA")
+else:
+    print("NO APRUEBA")
