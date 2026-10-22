@@ -1,0 +1,31 @@
+
+Algoritmo EstacionAnio
+    Definir mes, dia Como Entero
+
+    Escribir "Ingrese el mes (1-12):"
+      Leer mes
+    Escribir "Ingrese el dia:"
+      Leer dia
+
+    Si mes < 1 O mes > 12 O dia < 1 O dia > 31 Entonces
+    Escribir "Fecha no valida"
+    SiNo
+        Si (mes = 12 Y dia >= 21) O mes = 1 O mes = 2 O (mes = 3 Y dia <= 20) Entonces
+            Escribir "Verano"
+        SiNo
+            Si (mes = 3 Y dia >= 21) O mes = 4 O mes = 5 O (mes = 6 Y dia <= 20) Entonces
+                Escribir "Otono"
+            SiNo
+                Si (mes = 6 Y dia >= 21) O mes = 7 O mes = 8 O (mes = 9 Y dia <= 22) Entonces
+                    Escribir "Invierno"
+                SiNo
+                    Escribir "Primavera"
+                  FinSi
+
+                    FinSi
+
+                      FinSi
+
+                        FinSi
+
+FinAlgoritmo
