@@ -1,0 +1,38 @@
+
+Algoritmo MenorDeTres
+    Definir a, b, c, menor Como Real
+
+    Escribir "Ingrese el primer número:"
+    Leer a
+    Escribir "Ingrese el segundo número:"
+    Leer b
+    Escribir "Ingrese el tercer número:"
+    Leer c
+
+    Si a <= b Y a <= c Entonces
+        menor <- a
+    Sino
+        Si b <= a Y b <= c Entonces
+            menor <- b
+        Sino
+            menor <- c
+        FinSi
+    FinSi
+
+    Escribir "El menor de los tres números es: ", menor
+FinAlgoritmo
+
+
+
+a = float(input("Ingrese el primer número: "))
+b = float(input("Ingrese el segundo número: "))
+c = float(input("Ingrese el tercer número: "))
+
+if a <= b and a <= c:
+    menor = a
+elif b <= a and b <= c:
+    menor = b
+else:
+    menor = c
+
+print(f"El menor de los tres números es: {menor}")
