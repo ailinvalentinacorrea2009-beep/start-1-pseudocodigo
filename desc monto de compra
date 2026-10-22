@@ -1,0 +1,38 @@
+
+Algoritmo DescuentoCompra
+    Definir monto, descuento, montoPagar Como Real
+
+    Escribir "Ingrese el monto de la compra:"
+    Leer monto
+
+    Si monto >= 200 Entonces
+        descuento <- monto * 0.15
+    Sino
+        Si monto >= 100 Entonces
+            descuento <- monto * 0.10
+        Sino
+            descuento <- monto * 0.05
+        FinSi
+    FinSi
+
+    montoPagar <- monto - descuento
+
+    Escribir "Descuento aplicado: $", descuento
+    Escribir "Monto a pagar: $", montoPagar
+FinAlgoritmo
+
+
+      
+monto = float(input("Ingrese el monto de la compra: "))
+
+if monto >= 200:
+    descuento = monto * 0.15
+elif monto >= 100:
+    descuento = monto * 0.10
+else:
+    descuento = monto * 0.05
+
+monto_pagar = monto - descuento
+
+print(f"Descuento aplicado: ${descuento:.2f}")
+print(f"Monto a pagar: ${monto_pagar:.2f}")
