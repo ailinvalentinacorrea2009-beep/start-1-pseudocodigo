@@ -1,0 +1,30 @@
+
+   Algoritmo IncrementoSalarial
+   Inicio  
+     Definir salario Como Real
+      Definir anio Como Entero
+
+    salario <- 1500
+    anio <- 1
+
+    Mientras anio <= 6 Hacer
+        salario <- salario * 1.10
+        Escribir "Salario del año ", anio, ": $", salario
+        anio <- anio + 1
+    FinMientras
+
+    Escribir "Salario final después de 6 años: $", salario
+FinAlgoritmo
+
+
+
+
+salario = 1500
+anio = 1
+
+while anio <= 6:
+    salario = salario * 1.10
+    print(f"Salario del año {anio}: ${salario:.2f}")
+    anio = anio + 1
+
+print(f"Salario final después de 6 años: ${salario:.2f}")
