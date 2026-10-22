@@ -1,0 +1,25 @@
+AlgoritmoDiaDeLaSemana()
+  Inicio
+     Definir numero como entero
+        Escribir ´´Íngrese un numero del 1 al 7´´
+        Leer numero
+
+        Segun numero hacer
+            1: 
+                Escribir ´´El dia es: LuneS´´
+            2:
+                Escribir ´´El dia es: Martes´´
+            3:
+                Escribir ´´El dia es: Miercoles´´
+            4:
+                Escribir ´´El dia es: Jueves´´
+            5:
+                Escribir ´´ El dia es: Viernes´´
+            6:
+                Escribir ´´El dia es: Sabado´´
+            7:
+                Escribir ´´El dia es: Domingo´´
+            De otro modo:
+                Escrubir ´´Error: Numero fuera del rango (1-7)´´
+            FinSegun
+        Fin
