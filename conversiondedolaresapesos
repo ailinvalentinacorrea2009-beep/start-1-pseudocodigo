@@ -1,0 +1,29 @@
+
+Algoritmo ConversionDolaresPesos
+    // Declaración de variables
+      Definir dolares, tipoCambio, pesos Como Real
+
+    // Entrada de datos
+      Escribir "Ingrese la cantidad en dólares:"
+        Leer dolares
+
+      Escribir "Ingrese el tipo de cambio actual:"
+        Leer tipoCambio
+
+    // Proceso
+      pesos <- dolares * tipoCambio
+
+    // Salida de resultados
+      Escribir "La cantidad equivalente en pesos mexicanos es: ", pesos
+FinAlgoritmo
+
+
+# Entrada de datos
+dolares = float(input("Ingrese la cantidad en dólares: "))
+tipo_cambio = float(input("Ingrese el tipo de cambio actual: "))
+
+# Proceso
+pesos = dolares * tipo_cambio
+
+# Salida de resultados
+print(f"La cantidad equivalente en pesos mexicanos es: {pesos:.2f} MXN")
