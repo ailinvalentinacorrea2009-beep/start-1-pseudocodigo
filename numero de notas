@@ -1,0 +1,40 @@
+
+Algoritmo PromedioNNotas
+ Inicio  
+  Definir N, i Como Entero
+    Definir nota, suma, promedio Como Real
+
+    Escribir "Ingrese la cantidad de notas:"
+    Leer N
+
+    suma <- 0
+    i <- 1
+
+    Mientras i <= N Hacer
+        Escribir "Ingrese la nota ", i, ":"
+        Leer nota
+
+        suma <- suma + nota
+        i <- i + 1
+    FinMientras
+
+    promedio <- suma / N
+
+    Escribir "El promedio de las notas es: ", promedio
+FinAlgoritmo
+
+
+
+N = int(input("Ingrese la cantidad de notas: "))
+
+suma = 0
+i = 1
+
+while i <= N:
+    nota = float(input(f"Ingrese la nota {i}: "))
+    suma = suma + nota
+    i = i + 1
+
+promedio = suma / N
+
+print(f"El promedio de las notas es: {promedio:.2f}")
