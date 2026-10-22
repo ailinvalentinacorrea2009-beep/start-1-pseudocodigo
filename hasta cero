@@ -1,0 +1,28 @@
+
+Algoritmo SumaNumeros
+    Definir numero, suma Como Entero
+    suma <- 0
+
+    Escribir "Ingrese un número (0 para terminar):"
+    Leer numero
+
+    Mientras numero <> 0 Hacer
+        suma <- suma + numero
+        Escribir "Ingrese un número (0 para terminar):"
+        Leer numero
+    FinMientras
+
+    Escribir "La suma total es: ", suma
+FinAlgoritmo
+
+
+
+suma = 0
+
+numero = int(input("Ingrese un número (0 para terminar): "))
+
+while numero != 0:
+    suma = suma + numero
+    numero = int(input("Ingrese un número (0 para terminar): "))
+
+print("La suma total es:", suma)
