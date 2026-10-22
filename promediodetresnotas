@@ -1,0 +1,34 @@
+
+Algoritmo PromedioTresNotas
+    // Declaración de variables
+    Definir nota1, nota2, nota3, promedio Como Real
+
+    // Entrada de datos
+    Escribir "Ingrese la primera nota (0 a 10):"
+    Leer nota1
+
+    Escribir "Ingrese la segunda nota (0 a 10):"
+    Leer nota2
+
+    Escribir "Ingrese la tercera nota (0 a 10):"
+    Leer nota3
+
+    // Proceso
+    promedio <- (nota1 + nota2 + nota3) / 3
+
+    // Salida de resultados
+    Escribir "El promedio obtenido es: ", promedio
+FinAlgoritmo
+
+
+# Entrada de datos
+nota1 = float(input("Ingrese la primera nota (0 a 10): "))
+nota2 = float(input("Ingrese la segunda nota (0 a 10): "))
+nota3 = float(input("Ingrese la tercera nota (0 a 10): "))
+
+# Proceso
+promedio = (nota1 + nota2 + nota3) / 3
+
+# Salida de resultados
+print(f"El promedio obtenido es: {promedio:.2f}")
+
