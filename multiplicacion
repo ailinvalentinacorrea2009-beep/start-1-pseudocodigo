@@ -1,0 +1,26 @@
+
+Algoritmo TablaMultiplicar
+    Definir K, i, resultado Como Entero
+
+    Escribir "Ingrese un número entero:"
+    Leer K
+
+    i <- 1
+
+    Mientras i <= 10 Hacer
+        resultado <- K * i
+        Escribir K, " x ", i, " = ", resultado
+        i <- i + 1
+    FinMientras
+FinAlgoritmo
+
+
+
+K = int(input("Ingrese un número entero: "))
+
+i = 1
+
+while i <= 10:
+    resultado = K * i
+    print(f"{K} x {i} = {resultado}")
+    i = i + 1
