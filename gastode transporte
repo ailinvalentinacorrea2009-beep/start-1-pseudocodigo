@@ -1,0 +1,57 @@
+
+Algoritmo GastoSemanalTransporte
+    // Declaración de variables
+      Definir viajes, dias Como Entero
+      Definir costoPasaje, gastoSemanal Como Real
+
+    // Entrada de datos
+      Escribir "Ingrese el número de viajes por día:"
+        Leer viajes
+
+      Escribir "Ingrese el costo de cada pasaje:"
+        Leer costoPasaje
+
+      Escribir "Ingrese los días que viaja a la semana:"
+        Leer dias
+
+    // Proceso
+      gastoSemanal <- viajes * costoPasaje * dias
+
+    // Salida de resultados
+      Escribir "El gasto total semanal de transporte es: $", gastoSemanal
+FinAlgoritmo
+
+
+import java.util.Scanner;
+
+public class GastoSemanalTransporte {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        // Declaración de variables
+        int viajes, dias;
+        double costoPasaje, gastoSemanal;
+
+        // Entrada de datos
+        System.out.print("Ingrese el número de viajes por día: ");
+        viajes = entrada.nextInt();
+
+        System.out.print("Ingrese el costo de cada pasaje: ");
+        costoPasaje = entrada.nextDouble();
+
+        System.out.print("Ingrese los días que viaja a la semana: ");
+        dias = entrada.nextInt();
+
+        // Proceso
+        gastoSemanal = viajes * costoPasaje * dias;
+
+        // Salida de resultados
+        System.out.printf(
+            "El gasto total semanal de transporte es: $%.2f%n",
+            gastoSemanal
+        );
+
+        entrada.close();
+    }
+}
+
