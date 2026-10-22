@@ -1,0 +1,49 @@
+
+Algoritmo PrecioFinal
+    // Declaración de variables
+    Definir precioOriginal, precioDescuento, descuento, iva, precioFinal Como Real
+
+    // Entrada de datos
+      Escribir "Ingrese el precio original del artículo:"
+        Leer precioOriginal
+
+    // Proceso
+    descuento <- precioOriginal * 0.20
+      precioDescuento <- precioOriginal - descuento
+    iva <- precioDescuento * 0.15
+      precioFinal <- precioDescuento + iva
+
+    // Salida de resultados
+      Escribir "Precio con descuento: $", precioDescuento
+      Escribir "IVA (15%): $", iva
+      Escribir "Precio final a pagar: $", precioFinal
+FinAlgoritmo
+
+
+import java.util.Scanner;
+
+public class PrecioFinal {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        // Declaración de variables
+        double precioOriginal, precioDescuento, descuento, iva, precioFinal;
+
+        // Entrada de datos
+        System.out.print("Ingrese el precio original del artículo: ");
+        precioOriginal = entrada.nextDouble();
+
+        // Proceso
+        descuento = precioOriginal * 0.20;
+        precioDescuento = precioOriginal - descuento;
+        iva = precioDescuento * 0.15;
+        precioFinal = precioDescuento + iva;
+
+        // Salida de resultados
+        System.out.printf("Precio con descuento: $%.2f%n", precioDescuento);
+        System.out.printf("IVA (15%%): $%.2f%n", iva);
+        System.out.printf("Precio final a pagar: $%.2f%n", precioFinal);
+
+        entrada.close();
+    }
+}
