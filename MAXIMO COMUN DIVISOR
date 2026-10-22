@@ -1,0 +1,24 @@
+Algoritmo MCD_Euclides()
+  Inicio
+    Definir a, b, residuo Como Entero
+
+    Escribir "Ingrese el primer numero positivo:"
+      Leer a
+    Escribir "Ingrese el segundo numero positivo:"
+      Leer b
+
+    Mientras a <= 0 O b <= 0 Hacer
+    Escribir "Error. Ingrese dos numeros positivos:"
+        Leer a
+        Leer b
+    FinMientras
+
+    Mientras b <> 0 Hacer
+        residuo <- a MOD b
+        a <- b
+        b <- residuo
+    FinMientras
+
+    Escribir "El MCD es: ", a
+
+FinAlgoritmo
