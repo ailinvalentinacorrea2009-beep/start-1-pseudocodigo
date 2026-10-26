@@ -1,0 +1,18 @@
+Algoritmo ValorFuturoAnualidad
+
+    Definir D, i, VF, totalDepositado Como Real
+    Definir n Como Entero
+
+      Escribir "Ingrese el deposito mensual:"
+        Leer D
+      Escribir "Ingrese la tasa de interes mensual en decimal:"
+        Leer i
+      Escribir "Ingrese el numero de meses:"
+        Leer n
+
+    totalDepositado <- D * n
+    VF <- D * (((1 + i)^n - 1) / i)
+
+      Escribir "Total depositado: ", totalDepositado
+      Escribir "Valor futuro: ", VF
+FinAlgoritmo
