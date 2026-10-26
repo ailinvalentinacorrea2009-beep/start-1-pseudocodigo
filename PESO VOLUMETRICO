@@ -1,0 +1,27 @@
+Algoritmo CostoEnvio
+    Definir pesoReal, largo, ancho, alto Como Real
+    Definir pesoVolumetrico, pesoCobrar, costo Como Real
+
+      Escribir "Ingrese el peso real en kg:"
+        Leer pesoReal
+        Escribir "Ingrese el largo en cm:"
+        Leer largo
+      Escribir "Ingrese el ancho en cm:"
+        Leer ancho
+      Escribir "Ingrese el alto en cm:"
+        Leer alto
+
+    pesoVolumetrico <- (largo * ancho * alto) / 5000
+
+    Si pesoReal > pesoVolumetrico Entonces
+        pesoCobrar <- pesoReal
+    SiNo
+        pesoCobrar <- pesoVolumetrico
+    FinSi
+
+    costo <- pesoCobrar * 2.50
+
+      Escribir "Peso volumetrico: ", pesoVolumetrico
+      Escribir "Peso a cobrar: ", pesoCobrar
+      Escribir "Costo total: $", costo
+FinAlgoritmo
