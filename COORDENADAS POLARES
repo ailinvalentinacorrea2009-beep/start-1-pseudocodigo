@@ -1,0 +1,15 @@
+Algoritmo CoordenadasPolares ()
+    Definir r, angulo, radianes, x, y Como Real
+
+    Escribir "Ingrese el radio:"
+    Leer r
+    Escribir "Ingrese el angulo en grados:"
+    Leer angulo
+
+    radianes <- angulo * PI / 180
+    x <- r * cos(radianes)
+    y <- r * sen(radianes)
+
+    Escribir "Coordenada x: ", x
+    Escribir "Coordenada y: ", y
+FinAlgoritmo
