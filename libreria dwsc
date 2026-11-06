@@ -1,0 +1,46 @@
+
+Algoritmo DescuentoLibreria
+
+    // Declaración de variables
+    Definir estudiante Como Logico
+    Definir compra, descuento, totalDescuento, totalPagar Como Real
+
+    // Solicitar los datos
+    Escribir "¿Es estudiante UTPL? (Verdadero/Falso)"
+    Leer estudiante
+
+    Escribir "Ingrese el monto de compra:"
+    Leer compra
+
+    // Inicializar el descuento
+    descuento <- 0
+
+    // Verificar si es estudiante
+    Si estudiante = Verdadero Entonces
+
+        descuento <- 20
+
+        // Verificar si la compra supera $30
+        Si compra > 30 Entonces
+            descuento <- descuento + 5
+        FinSi
+
+    SiNo
+
+        // Si no es estudiante, verificar si supera $50
+        Si compra > 50 Entonces
+            descuento <- 10
+        FinSi
+
+    FinSi
+
+    // Calcular el descuento y el total
+    totalDescuento <- compra * descuento / 100
+    totalPagar <- compra - totalDescuento
+
+    // Mostrar resultados
+    Escribir "Descuento aplicado: ", descuento, "%"
+    Escribir "Dinero descontado: $", totalDescuento
+    Escribir "Total a pagar: $", totalPagar
+
+FinAlgoritmo
