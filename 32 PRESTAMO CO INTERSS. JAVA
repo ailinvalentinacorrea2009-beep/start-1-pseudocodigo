@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class PrestamoConInteres {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        double capital, tasa, tiempo;
+        double interes, total;
+
+        System.out.print("Ingrese el capital: ");
+        capital = sc.nextDouble();
+
+        System.out.print("Ingrese la tasa de interes (% anual): ");
+        tasa = sc.nextDouble();
+
+        System.out.print("Ingrese el tiempo en años: ");
+        tiempo = sc.nextDouble();
+
+        interes = capital * tasa * tiempo / 100;
+
+        total = capital + interes;
+
+        System.out.println("Interes: " + interes);
+        System.out.println("Total a pagar: " + total);
+
+        sc.close();
+    }
+}
