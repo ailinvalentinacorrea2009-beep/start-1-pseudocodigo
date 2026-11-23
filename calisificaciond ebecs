@@ -1,0 +1,13 @@
+Algoritmo Clasificacion_Becas
+    Definir promedio Como Real
+    Leer promedio
+    Si promedio >= 9 Entonces
+        Escribir "Beca completa"
+    SiNo
+        Si promedio >= 8 Entonces
+            Escribir "Media beca"
+        SiNo
+            Escribir "Sin beca"
+        FinSi
+    FinSi
+FinAlgoritmo
