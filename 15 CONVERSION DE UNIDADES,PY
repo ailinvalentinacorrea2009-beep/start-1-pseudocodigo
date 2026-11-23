@@ -1,0 +1,43 @@
+# Mostrar el menú
+print("===== CONVERSOR DE UNIDADES =====")
+print("1. Kilómetros a metros")
+print("2. Metros a centímetros")
+print("3. Horas a minutos")
+print("4. Salir")
+
+# Solicitar una opción
+opcion = int(input("Seleccione una opción: "))
+
+# Evaluar la opción
+if opcion == 1:
+
+    km = float(input("Ingrese los kilómetros: "))
+
+    metros = km * 1000
+
+    print("Resultado:", metros, "metros")
+
+elif opcion == 2:
+
+    metros = float(input("Ingrese los metros: "))
+
+    centimetros = metros * 100
+
+    print("Resultado:", centimetros, "centímetros")
+
+elif opcion == 3:
+
+    horas = float(input("Ingrese las horas: "))
+
+    minutos = horas * 60
+
+    print("Resultado:", minutos, "minutos")
+
+elif opcion == 4:
+
+    print("Gracias por utilizar el conversor")
+
+else:
+
+    print("Opción inválida")
+    
