@@ -1,0 +1,8 @@
+Algoritmo Circunferencia
+    Definir radio, area, longitud Como Real
+    Leer radio
+    area <- PI * radio^2
+    longitud <- 2 * PI * radio
+    Escribir "Area: ", area
+    Escribir "Longitud: ", longitud
+FinAlgoritmo
