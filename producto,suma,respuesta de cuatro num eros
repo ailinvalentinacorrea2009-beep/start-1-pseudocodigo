@@ -1,0 +1,10 @@
+Algoritmo Cuatro_Numeros
+    Definir a, b, c, d, suma, producto, promedio Como Real
+    Leer a, b, c, d
+    suma <- a + b + c + d
+    producto <- a * b * c * d
+    promedio <- suma / 4
+    Escribir "Suma: ", suma
+    Escribir "Producto: ", producto
+    Escribir "Promedio: ", promedio
+FinAlgoritmo
