@@ -1,0 +1,6 @@
+Algoritmo Hipotenusa
+    Definir cateto1, cateto2, hipotenusa Como Real
+    Leer cateto1, cateto2
+    hipotenusa <- RC(cateto1^2 + cateto2^2)
+    Escribir "Hipotenusa: ", hipotenusa
+FinAlgoritmo
