@@ -1,0 +1,10 @@
+Algoritmo MCD
+    Definir a, b, residuo Como Entero
+    Leer a, b
+    Mientras b <> 0 Hacer
+        residuo <- a MOD b
+        a <- b
+        b <- residuo
+    FinMientras
+    Escribir "MCD: ", Abs(a)
+FinAlgoritmo
